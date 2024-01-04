@@ -36,9 +36,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     min-height: 80vh;
+    width: 90%;
     height: fit-content;
     background-color: var(--white);
     border-radius: 10px 10px 0px 0px;
+    margin: 20px 0;
 }
 
 #calculator,
@@ -227,7 +229,6 @@ input[type="number"]::-webkit-outer-spin-button {
         padding: 0px;
     }
     #calculator-container {
-        width: 70vw;
         min-height: 80vh;
         border-radius: 10px;
     }
@@ -236,5 +237,12 @@ input[type="number"]::-webkit-outer-spin-button {
     #results {
         width: 50%;
         border-radius: 10px 10px 0px 0px;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    #calculator-container {
+        max-width: 70vw;
     }
 }
