@@ -118,7 +118,7 @@ function App() {
 
                     <section className="input-container">
                         <h2 className="sr-only">add the number of people splitting the bill</h2>
-                        <aside id="aside-people-error">
+                        <aside id="error-text">
                             <p id="people_label">Number of people</p>
                             <p id="error-message" className={error ? "error" : "no-error"}>
                                 can&apos;t be zero
