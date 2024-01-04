@@ -73,8 +73,8 @@ function App() {
             <section id="calculator-container">
                 <section id="calculator">
                     <section className="input-container">
-                        <h4 id="bill">Bill</h4>
-                        <span id="input-container">
+                        <p id="bill_label">Bill</p>
+                        <span id="bill-input-container">
                             <img src={dollarBill} alt="dollar bill icon" />
                             <input
                                 type="number"
@@ -88,7 +88,7 @@ function App() {
                     </section>
 
                     <section>
-                        <h4 id="selectTip">Select tip %</h4>
+                        <p id="selectTip">Select tip %</p>
                         <section id="tipContainer">
                             {tipValues.map((tip) => (
                                 <button
@@ -113,12 +113,12 @@ function App() {
 
                     <section className="input-container">
                         <span id="error-container">
-                            <h4 id="people">Number of people</h4>
+                            <p id="people_label">Number of people</p>
                             <p id="error-message" className={error ? "error" : "no-error"}>
                                 can&apos;t be zero
                             </p>
                         </span>
-                        <span id="input-container">
+                        <span id="people-input-container">
                             <img src={person} alt="dollar bill icon" />
                             <input
                                 type="number"
@@ -132,13 +132,13 @@ function App() {
                 </section>
                 <section id="results">
                     <section id="container">
-                        <aside id="results-text">
+                        <aside id="results-text-tip">
                             <p>
                                 Tip amount <sub>/ person</sub>
                             </p>
                             <span>{personTip ? `$${personTip}` : "$0.00"}</span>
                         </aside>
-                        <aside id="results-text">
+                        <aside id="results-text-total">
                             <p>
                                 Total <sub>/ person</sub>
                             </p>
