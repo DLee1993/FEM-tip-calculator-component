@@ -71,8 +71,11 @@ function App() {
                 <span>tter</span>
             </h1>
             <section id="calculator-container">
+                <h2 className="sr-only">calculator</h2>
                 <section id="calculator">
+                    <h2 className="sr-only">calculator section</h2>
                     <section className="input-container">
+                        <h2 className="sr-only">calulator inputs</h2>
                         <p id="bill_label">Bill</p>
                         <span id="bill-input-container">
                             <img src={dollarBill} alt="dollar bill icon" />
@@ -88,8 +91,10 @@ function App() {
                     </section>
 
                     <section>
+                        <h2 className="sr-only">select tip amount</h2>
                         <p id="selectTip">Select tip %</p>
                         <section id="tipContainer">
+                            <h2 className="sr-only">select a tip button below</h2>
                             {tipValues.map((tip) => (
                                 <button
                                     className="tip-button"
@@ -112,12 +117,13 @@ function App() {
                     </section>
 
                     <section className="input-container">
-                        <span id="error-container">
+                        <h2 className="sr-only">add the number of people splitting the bill</h2>
+                        <aside id="error-container">
                             <p id="people_label">Number of people</p>
                             <p id="error-message" className={error ? "error" : "no-error"}>
                                 can&apos;t be zero
                             </p>
-                        </span>
+                        </aside>
                         <span id="people-input-container">
                             <img src={person} alt="dollar bill icon" />
                             <input
@@ -131,14 +137,16 @@ function App() {
                     </section>
                 </section>
                 <section id="results">
+                    <h2 className="sr-only">results section</h2>
                     <section id="container">
-                        <aside id="results-text-tip">
+                        <h2 className="sr-only">results text</h2>
+                        <aside id="text-tip">
                             <p>
                                 Tip amount <sub>/ person</sub>
                             </p>
                             <span>{personTip ? `$${personTip}` : "$0.00"}</span>
                         </aside>
-                        <aside id="results-text-total">
+                        <aside id="text-total">
                             <p>
                                 Total <sub>/ person</sub>
                             </p>

@@ -66,8 +66,8 @@ main {
     margin-bottom: 20px;
 }
 
-#results-text-tip,
-#results-text-total {
+#text-tip,
+#text-total {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,18 +75,18 @@ main {
     width: 100%;
 }
 
-#results-text-tip p,
-#results-text-total p {
+#text-tip p,
+#text-total p {
     display: flex;
     flex-direction: column;
     color: var(--white);
 }
-#results-text-tip p sub,
-#results-text-total p sub {
+#text-tip p sub,
+#text-total p sub {
     color: var(--grayCyan);
 }
-#results-text-tip span,
-#results-text-total span {
+#text-tip span,
+#text-total span {
     color: var(--strongCyan);
     font-size: 35px;
 }
